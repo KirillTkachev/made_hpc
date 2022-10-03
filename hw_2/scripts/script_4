@@ -1,0 +1,10 @@
+#!/bin/bash 
+
+file="Linux"
+
+if [  -f $file ]; then
+    echo "course"
+else
+    echo "very easy"
+    echo "cource is easy" > $file
+fi

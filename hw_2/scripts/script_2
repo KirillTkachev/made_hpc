@@ -1,0 +1,7 @@
+#!/bin/bash 
+
+array=($(seq 0 0.1 1.8)) 
+for i in "${array[@]}"
+do
+    echo $i
+done
