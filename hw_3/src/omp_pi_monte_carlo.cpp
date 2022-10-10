@@ -33,7 +33,7 @@ void seedThreads() {
 
 int main(int argc, char* argv[])
 {
-	if(argc != 2)
+    if(argc != 2)
     {
     	printf("You should pass 1 argument");
     	return -1;
