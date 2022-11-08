@@ -33,7 +33,7 @@ void seedThreads() {
 
 int main(int argc, char* argv[])
 {
-	if(argc != 2)
+    if(argc != 2)
     {
     	printf("You should pass 1 argument");
     	return -1;
@@ -62,10 +62,10 @@ int main(int argc, char* argv[])
     {
         tid = omp_get_thread_num();   
         seed = seeds[tid];            
-		srand(seed);	    
+	srand(seed);	    
 		
-		double x = 0.0;
-		double y = 0.0;
+	double x = 0.0;
+	double y = 0.0;
 		          
         #pragma omp for
         for (flips = 0; flips < N; flips++) 
